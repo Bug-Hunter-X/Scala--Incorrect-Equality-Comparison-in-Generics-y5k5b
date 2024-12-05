@@ -1,0 +1,2 @@
+# Scala Generics Equality Bug
+This repository demonstrates a common error when using generics and equality comparisons in Scala. The code includes a class `MyClass` with a generic type parameter `T`. The `myMethod` within `MyClass` compares two objects of type `T` using the `==` operator which compares references not values leading to unexpected results for objects like Strings. The solution demonstrates how to use `.equals()` for value-based comparison.
